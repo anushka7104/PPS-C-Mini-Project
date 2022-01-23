@@ -17,7 +17,18 @@ int main()
 
     int i, input, count;
     i = input = count = 0;
-  
+    
+  #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct library {
+    char book_name[20];
+    char author[20];
+    int pages;
+    float price;
+};
+int main()
+{   struct library lib[100];
     while (input != 5) {
   
         printf("\n\n****###### WELCOME TO E-LIBRARY #####****\n");
