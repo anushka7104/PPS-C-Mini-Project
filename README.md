@@ -1,34 +1,23 @@
 PPS C MINI PROJECT - RA2111037010037
 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-struct library {
+       #include <stdio.h>
+       #include <stdlib.h>
+       #include <string.h>
+       struct library {
     char book_name[20];
     char author[20];
     int pages;
     float price;
-};
-int main()
-{   struct library lib[100];
+    };
+    int main(){
     
+    struct library lib[100];
     char ar_nm[30], bk_nm[30];
 
     int i, input, count;
     i = input = count = 0;
-    
-  #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-struct library {
-    char book_name[20];
-    char author[20];
-    int pages;
-    float price;
-};
-int main()
-{   struct library lib[100];
+  
     while (input != 5) {
   
         printf("\n\n****###### WELCOME TO E-LIBRARY #####****\n");
@@ -98,3 +87,5 @@ int main()
     }
     return 0;
 }
+
+                
