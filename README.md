@@ -10,9 +10,9 @@ struct library {
     int pages;
     float price;
 };
-// Driver Code
 int main()
 {   struct library lib[100];
+    
     char ar_nm[30], bk_nm[30];
 
     int i, input, count;
