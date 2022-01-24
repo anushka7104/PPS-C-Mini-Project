@@ -1,18 +1,18 @@
 PPS C MINI PROJECT - RA2111037010037
 
 
-       #include <stdio.h>
-       #include <stdlib.h>
-       #include <string.h>
-       struct library {
+      [1:20 pm, 24/01/2022] Anisha 🥰: #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct library {
     char book_name[20];
     char author[20];
     int pages;
     float price;
-    };
-    int main(){
-    
-    struct library lib[100];
+};
+// Driver Code
+int main()
+{   struct library lib[100];
     char ar_nm[30], bk_nm[30];
 
     int i, input, count;
@@ -20,7 +20,7 @@ PPS C MINI PROJECT - RA2111037010037
   
     while (input != 5) {
   
-        printf("\n\n****###### WELCOME TO E-LIBRARY #####****\n");
+        printf("\n\n*###### WELCOME TO E-LIBRARY #####*\n");
         printf("\n\n1. Add book information\n2. Display book information\n");
         printf("3. List all books of given author\n");
         printf("4. List the count of books in the library\n");
@@ -58,7 +58,7 @@ PPS C MINI PROJECT - RA2111037010037
                 printf("Book name = %s", lib[i].book_name);
                 printf("\nAuthor name = %s", lib[i].author);
                 printf("\nPages = %d", lib[i].pages);
-                printf("\nPrice = %f\n", lib[i].price);
+                printf("\nPrice = %f", lib[i].price);
             }
             break;
   
@@ -68,13 +68,12 @@ PPS C MINI PROJECT - RA2111037010037
             scanf("%s", ar_nm);
             for (i = 0; i < count; i++) {
   
-                i  if (strcmp(ar_nm, lib[i].author) == 0) {
+               if (strcmp(ar_nm, lib[i].author) == 0) {
                 printf("Book name = %s", lib[i].book_name);
                 printf("\nAuthor name = %s", lib[i].author);
                 printf("\nPages = %d", lib[i].pages);
                 printf("\nPrice = %f", lib[i].price); }
-                else {
-                goto l; }
+                else {goto l; }
             }
             break;
   
@@ -86,9 +85,8 @@ PPS C MINI PROJECT - RA2111037010037
         case 5:
             exit(0);
         }
-        1 : printf("Author Not Found");
+        l: printf("\nAuthor not found");
     }
+    
     return 0;
     }
-
-                
