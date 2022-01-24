@@ -1,18 +1,18 @@
 PPS C MINI PROJECT - RA2111037010037
 
 
-      [1:20 pm, 24/01/2022] Anisha 🥰: #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-struct library {
+      #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    struct library {
     char book_name[20];
     char author[20];
     int pages;
     float price;
-};
-// Driver Code
-int main()
-{   struct library lib[100];
+     };
+
+     int main(){ 
+     struct library lib[100];
     char ar_nm[30], bk_nm[30];
 
     int i, input, count;
