@@ -74,7 +74,7 @@ PPS C MINI PROJECT - RA2111037010037
                 printf("\nPages = %d", lib[i].pages);
                 printf("\nPrice = %f", lib[i].price); }
                 else {
-                printf("Author Not Available\n"); }
+                goto l; }
             }
             break;
   
@@ -86,6 +86,7 @@ PPS C MINI PROJECT - RA2111037010037
         case 5:
             exit(0);
         }
+        1 : printf("Author Not Found");
     }
     return 0;
     }
