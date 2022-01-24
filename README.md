@@ -58,7 +58,7 @@ PPS C MINI PROJECT - RA2111037010037
                 printf("Book name = %s", lib[i].book_name);
                 printf("\nAuthor name = %s", lib[i].author);
                 printf("\nPages = %d", lib[i].pages);
-                printf("\nPrice = %f", lib[i].price);
+                printf("\nPrice = %f\n", lib[i].price);
             }
             break;
   
@@ -68,11 +68,13 @@ PPS C MINI PROJECT - RA2111037010037
             scanf("%s", ar_nm);
             for (i = 0; i < count; i++) {
   
-                if (strcmp(ar_nm, lib[i].author) == 0)
+                i  if (strcmp(ar_nm, lib[i].author) == 0) {
                 printf("Book name = %s", lib[i].book_name);
                 printf("\nAuthor name = %s", lib[i].author);
                 printf("\nPages = %d", lib[i].pages);
-                printf("\nPrice = %f", lib[i].price);
+                printf("\nPrice = %f", lib[i].price); }
+                else {
+                printf("Author Not Available\n"); }
             }
             break;
   
