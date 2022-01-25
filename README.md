@@ -5,15 +5,15 @@ PPS C MINI PROJECT - RA2111037010037
     #include <stdlib.h>
     #include <string.h>
     struct library {
-    char book_name[20];
-    char author[20];
+    char book_name[70];
+    char author[70];
     int pages;
     float price;
      };
 
      int main(){ 
      struct library lib[100];
-    char ar_nm[30], bk_nm[30];
+    char ar_nm[100], bk_nm[100];
 
     int i, input, count;
     i = input = count = 0;
